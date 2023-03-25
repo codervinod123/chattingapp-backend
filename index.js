@@ -22,7 +22,7 @@ app.use("/api/auth",userRoutes);
 app.use("/api/messages",messageRoutes);
 
 
-require("../server/db/db");
+require("../db/db");
 
 
 const server=app.listen(process.env.PORT,()=>{
